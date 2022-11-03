@@ -63,7 +63,7 @@ docker run \
    -e KAFKA_BROKER_ID=$KAFKA_BROKER_ID \
    -e "KAFKA_EXTERNAL_PORT=910$KAFKA_BROKER_ID" \
    -e KAFKA_EXTERNAL_HOST=localhost \
-   -e KAFKA_ZOOKEEPER_CONNECT=172.17.0.1:2281,172.17.0.1:2282,172.17.0.1:2283 \
+   -e KAFKA_ZOOKEEPER_CONNECT=192.168.1.85:2281,192.168.1.85:2282,192.168.1.85:2283 \
    -l kafka \
    --network network_kafka \
    kafka_example

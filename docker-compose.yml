@@ -52,7 +52,7 @@ services:
       - KAFKA_BROKER_ID=1
       - KAFKA_EXTERNAL_PORT=9101
       - KAFKA_EXTERNAL_HOST=localhost
-      - KAFKA_ZOOKEEPER_CONNECT=172.17.0.1:2281,172.17.0.1:2282,172.17.0.1:2283
+      - KAFKA_ZOOKEEPER_CONNECT=192.168.1.85:2281,192.168.1.85:2282,192.168.1.85:2283 # or try 172.17.0.1, e.g. look for inet under en0 from an ifconfig
     depends_on:
       - zookeeper_1
       - zookeeper_2
@@ -71,7 +71,7 @@ services:
       - KAFKA_BROKER_ID=2
       - KAFKA_EXTERNAL_PORT=9102
       - KAFKA_EXTERNAL_HOST=localhost
-      - KAFKA_ZOOKEEPER_CONNECT=172.17.0.1:2281,172.17.0.1:2282,172.17.0.1:2283
+      - KAFKA_ZOOKEEPER_CONNECT=192.168.1.85:2281,192.168.1.85:2282,192.168.1.85:2283
     depends_on:
       - zookeeper_1
       - zookeeper_2
@@ -90,7 +90,7 @@ services:
       - KAFKA_BROKER_ID=3
       - KAFKA_EXTERNAL_PORT=9103
       - KAFKA_EXTERNAL_HOST=localhost
-      - KAFKA_ZOOKEEPER_CONNECT=172.17.0.1:2281,172.17.0.1:2282,172.17.0.1:2283
+      - KAFKA_ZOOKEEPER_CONNECT=192.168.1.85:2281,192.168.1.85:2282,192.168.1.85:2283
     depends_on:
       - zookeeper_1
       - zookeeper_2
